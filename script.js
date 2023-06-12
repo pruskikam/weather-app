@@ -25,7 +25,7 @@ const getWeather = () => {
 		temperature.textContent = Math.floor(temp) + '°C'
 		humidity.textContent = hum + '%'
         weather.textContent = status.main
-	warning.textContent =''
+        warning.textContent =''
         input.value = ''
 
 		
@@ -54,7 +54,8 @@ const getWeather = () => {
             photo.setAttribute('src', './img/unknown.png') 
 
         }
-    }).catch(() => warning.textContent = 'Wpisz poprawną nazwę miasta')
+
+    }).catch(() => warning.textContent = 'Wpisz poprawną nazwę miasta!')
 }
 
         
